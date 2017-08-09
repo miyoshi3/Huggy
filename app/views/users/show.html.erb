@@ -1,4 +1,19 @@
 <%= render 'partial/navbar' %>
+
+<!-- 認証チェックマーク -->
+<script type="text/javascript">
+  $(function(){
+    <% if !@user.email.blank?%>
+      $("#ver-email").attr('class','vertification-checked');
+    <% end %>
+
+    <% if !@user.phone_number.blank?%>
+      $("#ver-tel").attr('class','vertification-checked');
+    <% end %>
+
+  });
+</script>
+
 <div class="container">
   </div>
     <div class="row">
@@ -27,7 +42,9 @@
       </div>
 
       <div class="col-lg-9 col-md-8 col-sm-12">
-          <h1>こんにちは</h1>
+          <h1>こんにちは <%= @user.name %> です!</h1>
+          <p>自己紹介</p>
+          <%= @user.description %>
       </div>
     </div>
 </div>
