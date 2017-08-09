@@ -21,7 +21,7 @@ gem 'jquery-rails'
 gem 'devise'
 gem 'toastr-rails'
 gem 'pry'
-
+gem 'devise'
 
 
 
