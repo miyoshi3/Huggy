@@ -20,6 +20,8 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'jquery-rails'
 gem 'devise'
 gem 'toastr-rails'
+gem 'pry'
+
 
 
 
