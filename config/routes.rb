@@ -5,5 +5,6 @@ Rails.application.routes.draw do
 
 
   resources :users, only:[:show]
+  get 'listings/mio' => 'listings#mio'
   resources :listings
 end
