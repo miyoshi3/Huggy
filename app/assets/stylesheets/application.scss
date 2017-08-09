@@ -1,22 +1,22 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import  "toastr";
+@import "toastr";
+
 
 .jumbotron {
     padding-top: 0px;
     // 背景画像を暗くする
-    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) ), url(shutterstock.jpg);
-	  background-size: cover;
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) ), url(person-845325_1920.jpg);
+	background-size: cover;
 	// 背景画像の位置を決める
-	  background-position: 20% 20%;
-	  height: 420px;
+	background-position: 50% 50%;
+	height: 420px;
 }
 
 .jumbotron .container .row{
-  margin-top: 100px;
-  color: #fff;
+    margin-top: 100px;
+    color: #fff;
 }
-
 
 .navbar-default {
     background: transparent;
@@ -37,42 +37,93 @@
     background-color: #fff;
 }
 
-
-
-
-
-.navber_devise{
-  background: #fff;
+//navbar-deviseのcss
+.navbar-devise {
+    background: #fff;
+    border-color: #fff;
+    z-index: 10;
 }
 
-.navber_default .navber-nav > li > a {
-  color: #222222;
-  font-size: 13px;
+.navbar-devise .navbar-nav > li > a {
+    color: #222222;
+    font-size: 13px;
 }
 
-.navber_default .navber-brand{
-  color: #222222;
+.navbar-devise .navbar-brand {
+    color: #222222;
 }
 
 // トップページのnavbarのドロップダウンがクリックされた時
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
     background-color: transparent;
     color: #555;
+}
+
+//facebookボタン
+.btn-facebook {
+    color: #fff;
+    background-color: #4c66a4;
+}
+
+// プロフィール画像
+.profile-0 {
+    width: 28px;
+    height: 28px;
+}
+
+.profile-1 {
+    width: 50px;
+    height: 50px;
+}
+
+.profile-2{
+    width: 100px;
+    height: 100px;
+}
+
+.profile-full {
+  width: 30%;
+}
+
+@media (min-width: 992px){
+.profile-full {
+        width: 100%;
+    }
+}
+
+.row-space-1 {
+  margin-bottom: 10px;
+}
+
+.row-space-2 {
+  margin-bottom: 15px;
+}
+
+.row-space-3 {
+  margin-bottom: 20px;
+}
+
+.row-space-4 {
+  margin-bottom: 25px;
+}
+
+.btn-full {
+    width: 100%;
+}
 
 .vertification-checked:before{
-  content:"\f00c";
+  content: "\f00c";
   font-family: FontAwesome;
-    position: relative;
-    z-index: 100;
-    top:2px;
-    font-size:1.55em;
-    text-align:center;
-    width:1.25em;
-    color:#00d1c1;
+  position: relative;
+  z-index: 100;
+  top:2px;
+  font-size: 1.55em;
+  text-align: center;
+  width: 1.25em;
+  color: #00d1c1;
 }
 
-}
-body{
-  color: #222;
-  background-color: #F8F8F8;
+body {
+    color: #222;
+    background-color: #F8F8F8;
 }
