@@ -23,6 +23,7 @@ gem 'toastr-rails'
 gem 'pry'
 gem 'devise'
 gem 'omniauth-facebook'
+gem "paperclip", "~> 5.0.0"
 
 
 
