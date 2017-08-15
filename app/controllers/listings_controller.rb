@@ -34,7 +34,7 @@ class ListingsController < ApplicationController
 
   def update
     if @listing.update(listing_params)
-      redirect_to manage_listing_price_path(id: @listing.id), notice: '更新できました'
+      redirect_to :back, notice: "更新できました"
     end
   end
 

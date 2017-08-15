@@ -47,8 +47,7 @@
                 <div class="col-md-3 text-center row-space-2">
                     <%= link_to user_path(@listing.user) do %>
                         <!--後で直してくれるそうです -->
-                        <% binding.pry %>
-                        <%= image_tag @listing.user.image, class:"img-circle profile-2" %>
+                        <%= image_tag @listing.user, class:"img-circle profile-2" %>
                         <!-- <%= image_tag 'IMG_2226.jpg', class:"img-circle profile-2" %> -->
                     <% end %>
                     <h5><%= @listing.user.name %></h5>
